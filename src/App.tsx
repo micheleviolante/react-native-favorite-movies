@@ -7,9 +7,14 @@ import Button from './components/Button'
 // 3. Creare FlatList per mostrare i film
 
 interface Props {}
-interface State {}
+interface State {
+  movies: Movie[]
+}
+
 export default class App extends Component<Props, State> {
-  state: State = {}
+  state: State = {
+    movies: [],
+  }
 
   componentDidMount() {
     // 1. effettua fetch
