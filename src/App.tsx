@@ -2,8 +2,24 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, Alert } from 'react-native'
 import Button from './components/Button'
 
+// 1. Creare componente MovieRow
+// 2. Fetch dei dati non appena so apre la schermata
+// 3. Creare FlatList per mostrare i film
+
 interface Props {}
-export default class App extends Component<Props> {
+interface State {}
+export default class App extends Component<Props, State> {
+  state: State = {}
+
+  componentDidMount() {
+    // 1. effettua fetch
+    // fetch('url')
+    //   .then(res => res.json())
+    //   .then()data => data)
+    //   .catch(err => Alert.alert('Error', err.message))
+    // 2. modifica stato per salvare movies
+  }
+
   render() {
     return (
       <View style={styles.container}>
